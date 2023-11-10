@@ -1,0 +1,124 @@
+﻿@model QuanLyTruongHoc.Models.Admin.CollectFee
+
+@{
+    ViewBag.Title = "CollectFees";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Học phí</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Học phí</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fab fa-paypal"></i> Học phí</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class=" card-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+
+                                <div class="form-horizontal">
+
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                    @Html.HiddenFor(model => model.AdmissionNo, new { htmlAttributes = new { @class = "form-control" } })
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.StudentName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.StudentName, new { htmlAttributes = new { @class = "form-control", disabled = "true" } })
+                                            @Html.ValidationMessageFor(model => model.StudentName, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                    @Html.HiddenFor(model => model.ClassLevelID, new { htmlAttributes = new { @class = "form-control" } })
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Session, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Session, new SelectList(ViewBag.Session, "SessionName", "SessionName"), new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Session, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Amount, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Amount, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Amount, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.TellerNo, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.TellerNo, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.TellerNo, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Bank, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            <select class="form-control" id="StudentGender" name="Bank">
+                                                <option>VietcomBank</option>
+                                                <option>ArgiBank</option>
+                                                <option>TPBank</option>
+                                                <option>TechcomBank</option>
+                                            </select>
+                                            @Html.ValidationMessageFor(model => model.Bank, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Tạo" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,111 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.Student>
+
+@{
+    ViewBag.Title = "StudentCollectFee";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Fee</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Fee</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fab fa-paypal"></i> Fee</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.AdmissionNo)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.StudentName)
+                                        </th>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Gender)
+                                        </th>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ClassLevel)
+                                        </th>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ClassAphabet)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.AdmissionNo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.StudentName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Gender)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ClassLevel)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ClassAphabet)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("CollectFees","Fee", new { id = item.AdmissionNo})" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/48810_user_add_icon.png" /></a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </table>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

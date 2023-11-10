@@ -1,0 +1,55 @@
+.clear{
+    clear: both;
+}
+.pr-7{
+    padding-right: 50px;
+}
+.pl-6{
+    padding-left: 150px;
+}
+.p-6{
+    padding: 30px;
+}
+.mt-6{
+    margin-top: 100px;
+}
+#button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #DEF4ED;
+    color: #77D7D1;
+    font-weight: bold;
+}
+#card{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#icon{
+    padding-top: 5px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #008AFF;
+    color: white;
+    font-size: 13px;
+}
+#tag{
+    height: 30px;
+    padding-top: 2px;
+    border-radius: 15px;
+}
+#tag p{
+    text-align: center;
+    color: white;
+}
+#check{
+    height: 60px;
+    border-radius: 30px;
+}
+#check i{
+    padding: 19px;
+    font-size: 25px;
+    color: white;
+}

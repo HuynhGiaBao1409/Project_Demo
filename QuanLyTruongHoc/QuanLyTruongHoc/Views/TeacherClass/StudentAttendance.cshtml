@@ -1,0 +1,216 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Teacher.StudentAttendance>
+
+@{
+    ViewBag.Title = "StudentAttendance";
+    Layout = "~/Views/Shared/Teacher.cshtml";
+}
+
+<div class="page-wrapper">
+
+
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+    </style>
+
+    <div class="page-breadcrumb">
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Student Attendance</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Student Attendance</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-users"></i> Student Attendance</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <a href="@Url.Action("MarkAttendance", "TeacherClass")" class="btn btn btn-dark">
+                                            <i class="fas fa-plus-square"></i>
+                                            <span>
+                                                <strong>Mark Attendance</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            @using (Html.BeginForm("Student", "Student", FormMethod.Post))
+                            {
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Student Name</label>
+                                            @Html.TextBox("searchtxt", null, new { @class = "form-control", @placeholder = "Student Name" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn btn-dark">
+                                                <i class="fas fa-search"></i>  Query Table
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.AdmissionNo)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Studentname)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Date)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Remark)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.AdmissionNo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Studentname)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Date)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Remark)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("EditStudentAttendance", "Student", new { id = item.AdmissionNo })" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/48763_file_edit_icon.png" /></a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </table>
+
+
+
+                            @{
+                                double totalPages = ViewBag.TotalPages;
+
+                                <ul class="pagination">
+                                    @if (ViewBag.PageNumber == 1)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Previous", "StudentAttendance", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Previous", "StudentAttendance", new { PageNumber = ViewBag.PageNumber - 1 })
+                                        </li>
+                                    }
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        if (i == ViewBag.PageNumber)
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "StudentAttendance", new { PageNumber = i })
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "StudentAttendance", new { PageNumber = i })
+                                            </li>
+                                        }
+                                    }
+                                    @if (ViewBag.PageNumber == totalPages)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Next", "StudentAttendance", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Next", "StudentAttendance", new { PageNumber = ViewBag.PageNumber + 1 })
+                                        </li>
+                                    }
+                                </ul>
+                            }
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+@section Scripts
+{
+    <script>
+        $(function () {
+            var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                alertify.success(successMessage);
+        });
+    </script>
+}

@@ -1,0 +1,115 @@
+﻿@model QuanLyTruongHoc.Models.Admin.Role
+
+@{
+    ViewBag.Title = "AddRole";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Staff</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Staff</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-users"></i> Staff</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class=" card-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+
+                                <div class="form-horizontal">
+                                    <h4>Role</h4>
+                                    <hr />
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Rolename, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            <select class="form-control" id="StudentGender" name="Rolename">
+                                                <option>--Select Role--</option>
+                                                <option>Admin</option>
+                                                <option>Teacher</option>
+                                                <option>Bursar</option>
+                                            </select>
+                                            @Html.ValidationMessageFor(model => model.Rolename, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+
+                                    @Html.HiddenFor(model => model.StaffID, new { htmlAttributes = new { @class = "form-control" } })
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Staffname, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Staffname, new { htmlAttributes = new { @class = "form-control", disabled = "true" } })
+                                            @Html.ValidationMessageFor(model => model.Staffname, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", type = "Password" } })
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Create" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

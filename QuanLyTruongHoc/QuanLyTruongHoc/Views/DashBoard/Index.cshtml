@@ -1,0 +1,242 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.Staff>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+
+<div class="page-wrapper">
+
+
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+    </style>
+
+    <div class="page-breadcrumb">
+
+
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Dashboard</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-cyan text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-users"></i></h1>
+                        <h6 class="text-white">Nhân sự</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-success text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-user-graduate"></i></h1>
+                        <h6 class="text-white">Học sinh</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-warning text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-book"></i></h1>
+                        <h6 class="text-white">Môn học</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-danger text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-level-up-alt"></i></h1>
+                        <h6 class="text-white">Lớp</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-users"></i> Nhân sự</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <a href="@Url.Action("CreateStaff", "Staff")" class="btn btn btn-dark">
+                                            <i class="fas fa-plus-square"></i>
+                                            <span>
+                                                <strong> Thêm nhân sự</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            @using (Html.BeginForm("Index", "Dashboard", FormMethod.Post))
+                            {
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Class Level</label>
+                                            @Html.TextBox("searchtxt", null, new { @class = "form-control", @placeholder = "Tìm kiếm nhân sự" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn btn-dark">
+                                                <i class="fas fa-search"></i>  Tìm kiếm
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Staffname)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Gender)
+                                        </th>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Designation)
+                                        </th>
+
+
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Staffname)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Gender)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Designation)
+                                        </td>
+
+                                    </tr>
+                                }
+
+                            </table>
+
+
+
+                            @{
+                                double totalPages = ViewBag.TotalPages;
+
+                                <ul class="pagination">
+                                    @if (ViewBag.PageNumber == 1)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Lùi", "Index", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Lùi", "Index", new { PageNumber = ViewBag.PageNumber - 1 })
+                                        </li>
+                                    }
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        if (i == ViewBag.PageNumber)
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "Index", new { PageNumber = i })
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "Index", new { PageNumber = i })
+                                            </li>
+                                        }
+                                    }
+                                    @if (ViewBag.PageNumber == totalPages)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Tiến", "Index", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Tiến", "Index", new { PageNumber = ViewBag.PageNumber + 1 })
+                                        </li>
+                                    }
+                                </ul>
+                            }
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+

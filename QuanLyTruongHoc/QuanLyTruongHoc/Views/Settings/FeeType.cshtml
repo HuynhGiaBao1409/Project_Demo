@@ -1,0 +1,108 @@
+﻿﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.FeeType>
+
+@{
+    ViewBag.Title = "FeeType";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Loại phí</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Loại phí</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-list-alt"></i> Loại phí</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <a href="@Url.Action("CreateFeeType","Settings")" class="btn btn btn-dark">
+                                            <i class="fas fa-plus-square"></i>
+                                            <span>
+                                                <strong>Tạo mới</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <table class="table table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.FeeName)
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.FeeName)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("EditFeeType","Settings", new { id = item.FeeTypeID})" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/48763_file_edit_icon.png" /></a>
+                                            <a href="@Url.Action("DeleteFeeType","Settings", new { id = item.FeeTypeID})" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/616650_bin_delete_garbage_trash_icon.png" /></a>
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script>
+        $(function () {
+            var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                alertify.success(successMessage);
+        });
+        @*function Delete(id) {
+            alertify.confirm('Web Api CRUD Operations','Are You Sure to Delete this Record ?',function(){
+                window.location.href  = '@Url.Action("Delete","Employee")/'+id;
+            },null );
+        }*@
+    </script>
+
+
+}

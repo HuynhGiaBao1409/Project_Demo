@@ -1,0 +1,158 @@
+﻿@model QuanLyTruongHoc.Models.Admin.ClassTimeTable
+
+@{
+    ViewBag.Title = "CreateTimeTable";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Thời khóa biếu lớp</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Thời khóa biếu lớp</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-user-clock"></i> Thời khóa biếu lớp</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class=" card-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                                    @Html.HiddenFor(model => model.ClassLevelID, new { htmlAttributes = new { @class = "form-control" } })
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.ClassLevelName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.ClassLevelName, new { htmlAttributes = new { @class = "form-control", disabled = "true" } })
+                                            @Html.ValidationMessageFor(model => model.ClassLevelName, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Days, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            <select class="form-control" id="" name="Days">
+                                                <option>Select Day</option>
+                                                <option>Monday</option>
+                                                <option>Tuesday</option>
+                                                <option>Wednesday</option>
+                                                <option>Thursday</option>
+                                                <option>Friday</option>
+
+                                            </select>
+                                            @Html.ValidationMessageFor(model => model.Days, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period1, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period1, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period1, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period2, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period2, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period2, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period3, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period3, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period3, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period4, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period4, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period4, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period5, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period5, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period5, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Period6, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.DropDownListFor(model => model.Period6, new SelectList(ViewBag.Subject, "Subjectname", "Subjectname"), "--Select Subject--", new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.Period6, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Tạo" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

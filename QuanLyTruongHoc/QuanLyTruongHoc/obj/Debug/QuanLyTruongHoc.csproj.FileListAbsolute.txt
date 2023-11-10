@@ -1,0 +1,158 @@
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.dll.config
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.pdb
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.exe
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.exe.config
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.rsp
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.exe
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.exe.config
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.rsp
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.AppContext.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Console.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.Compression.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Net.Http.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.ValueTuple.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.exe
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.exe.config
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.rsp
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\VBCSCompiler.exe
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Antlr3.Runtime.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Newtonsoft.Json.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Helpers.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Mvc.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Optimization.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Razor.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Razor.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\WebGrease.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Helpers.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Mvc.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Optimization.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Razor.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Razor.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Newtonsoft.Json.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Antlr3.Runtime.pdb
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.AssemblyReference.cache
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.CoreCompileInputs.cache
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.CopyComplete
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.dll
+C:\Users\tinth\Desktop\PTUDW\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.pdb
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.dll.config
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\QuanLyTruongHoc.pdb
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.exe
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.exe.config
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csc.rsp
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.exe
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.exe.config
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\csi.rsp
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.AppContext.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Collections.Immutable.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Console.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Globalization.Calendars.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.Compression.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.FileSystem.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Net.Http.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Net.Sockets.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Reflection.Metadata.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.ValueTuple.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XPath.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.exe
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.exe.config
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\vbc.rsp
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\VBCSCompiler.exe
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\roslyn\VBCSCompiler.exe.config
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Antlr3.Runtime.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.Web.Infrastructure.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Newtonsoft.Json.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Helpers.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Mvc.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Optimization.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Razor.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Deployment.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Razor.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\WebGrease.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Helpers.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Mvc.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Optimization.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.Razor.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Deployment.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\System.Web.WebPages.Razor.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Newtonsoft.Json.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Antlr3.Runtime.pdb
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.AssemblyReference.cache
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.CoreCompileInputs.cache
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.csproj.CopyComplete
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.dll
+D:\Báo cáo nhóm 1 - TEKY HOLDING - Final\ProjectDemo - Quản Lý Trường Học\QuanLyTruongHoc\QuanLyTruongHoc\obj\Debug\QuanLyTruongHoc.pdb

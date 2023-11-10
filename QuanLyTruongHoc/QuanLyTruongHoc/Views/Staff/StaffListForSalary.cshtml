@@ -1,0 +1,103 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.Staff>
+
+@{
+    ViewBag.Title = "StaffListForSalary";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Lương nhân sự</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Lương nhân sự</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-users"></i> Lương nhân sự</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <a href="@Url.Action("CreateFinacialDetails","Staff")" class="btn btn btn-dark">
+                                            <i class="fas fa-plus-square"></i>
+                                            <span>
+                                                <strong>Tạo mới</strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Staffname)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Gender)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Designation)
+                                        </th>
+
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Staffname)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Gender)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Designation)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("CreateStaffFinance","Staff", new { id = item.StaffID})" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/48810_user_add_icon.png" /></a>
+
+                                        </td>
+                                    </tr>
+                                }
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

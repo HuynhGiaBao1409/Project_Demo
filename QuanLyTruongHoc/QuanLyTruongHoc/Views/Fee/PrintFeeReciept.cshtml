@@ -1,0 +1,104 @@
+﻿@model QuanLyTruongHoc.Models.Admin.CollectFee
+
+@{
+    Layout = null;
+}
+
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+<title>Matrix Template - The Ultimate Multipurpose admin template</title>
+<!-- Custom CSS -->
+<link href="~/assets/libs/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
+<link href="~/assets/extra-libs/calendar/calendar.css" rel="stylesheet" />
+<link href="~/dist/css/style.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-body printableArea">
+                <form name="GeneratePayrollSLip" method="post">
+                    <h3><b>Hóa đơn</b> <span class="pull-right"></span></h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pull-left">
+                                <address>
+                                    <h3> &nbsp;<b class="text-danger">TEKY HODLING</b></h3>
+                                </address>
+                            </div>
+                            <div class="pull-right text-right">
+                                <address>
+                                    <h3>Gửi,</h3>
+                                    <h4 class="font-bold">@Html.DisplayFor(model => model.StudentName)</h4>
+                                    <h4 class="font-bold">Năm học: @Html.DisplayFor(model => model.Session)</h4>
+                                    <h4 class="font-bold">Người giao dịch: @Html.DisplayFor(model => model.TellerNo)</h4>
+                                    <h4 class="font-bold">Lớp: @Html.DisplayFor(model => model.ClassLevelname)</h4>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="table-responsive m-t-40" style="clear: both;">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">#</th>
+                                            <th>Thông tin</th>
+                                            <th class="text-right">Số tiền</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">1</td>
+                                            <td>Học phí</td>
+                                            <td class="text-right">@Html.DisplayFor(model => model.Amount) VND</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="pull-right m-t-30 text-right">
+                                <hr>
+                                <h3><b>Tổng chi phí :</b> @Html.DisplayFor(model => model.Amount) VND</h3>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr>
+                            <div class="text-right">
+                                <div class="text-right">
+
+                                </div>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="~/assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="~/dist/js/jquery.ui.touch-punch-improved.js"></script>
+<script src="~/dist/js/jquery-ui.min.js"></script>
+<!-- Bootstrap tether Core JavaScript -->
+<script src="~/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+<script src="~/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="~/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+<script src="~/assets/extra-libs/sparkline/sparkline.js"></script>
+<!--Wave Effects -->
+<script src="~/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="~/dist/js/sidebarmenu.js"></script>
+<!--Custom JavaScript -->
+<script src="~/dist/js/custom.min.js"></script>
+
+<script src="~/assets/libs/moment/min/moment.min.js"></script>
+<script src="~/assets/libs/fullcalendar/dist/fullcalendar.min.js"></script>
+<script src="~/dist/js/pages/calendar/cal-init.js"></script>

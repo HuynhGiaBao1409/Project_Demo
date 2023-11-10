@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+      
+    <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+        <a class="navbar-brand text-primary" href="#"><span style="font-size: 50px;">Q</span>uick shop</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active px-2">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active px-2 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="products-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="products-dropdown">
+                    <a class="dropdown-item" href="#">Product 1</a>
+                    <a class="dropdown-item" href="#">Product 2</a>
+                    <a class="dropdown-item" href="#">Product 3</a>
+                  </div>
+                </li>
+                <li class="nav-item active px-2">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+                <li class="px-3">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary px-4" data-toggle="modal" data-target="#exampleModal">
+                    Login
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email:</label>
+                              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Mật khẩu:</label>
+                              <input type="password" class="form-control" id="pass" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Ghi nhớ mật khẩu</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="submitBtn()">Đăng nhập</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col">
+            <h1 class="title pb-3" style="font-size: 50px;">Lorem ipsum dolor sit amet consectetur <span class="text-primary">adipisicing elit.</span></h1>
+            <p class="text-secondary pb-3">Necessitatibus nobis perspiciatis explicabo tenetur, incidunt eos saepe adipisci dolores quisquam.</p>
+            <a href="#" class="btn btn-primary">Get started <i class="fas fa-angle-right"></i></a>
+      </div>
+      <div class="col">
+        <img src="images/illustration-3.svg" style="width: 90%;">
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-5" style="background-color: #fafbfe;">
+
+    <div class="container mt-6">
+      <div class="body text-center pt-5">
+      <a href="#" class="btn btn-primary" id="button">Get started</a>
+      <h3 class="title py-3">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.</h3>
+      <p class="text-secondary">Quia beatae, iusto voluptatum ad aperiam consequuntur aut aliquam.</p>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="card-deck">
+        <div class="card" id="card">
+          <img class="card-img-top" src="images/illustration-5.svg" alt="Card image cap" style="width: 50%; margin: 50px auto;">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor</h5>
+            <p class="card-text text-secondary">Dicta hic possimus amet corrupti saepe nulla libero voluptatem, eum voluptates quasi? Illum itaque dolores molestiae hic reprehenderit voluptatum assumenda.</p>
+          </div>
+        </div>
+        <div class="card" id="card">
+          <img class="card-img-top" src="images/illustration-6.svg" alt="Card image cap" style="width: 56%; margin: 50px auto;">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor</h5>
+            <p class="card-text text-secondary">Dicta hic possimus amet corrupti saepe nulla libero voluptatem, eum voluptates quasi? Illum itaque dolores molestiae hic reprehenderit voluptatum assumenda.</p>
+          </div>
+        </div>
+        <div class="card" id="card">
+          <img class="card-img-top" src="images/illustration-7.svg" alt="Card image cap" style="width: 64%; margin: 50px auto;">
+          <div class="card-body">
+            <h5 class="card-title">Lorem ipsum dolor</h5>
+            <p class="card-text text-secondary">Dicta hic possimus amet corrupti saepe nulla libero voluptatem, eum voluptates quasi? Illum itaque dolores molestiae hic reprehenderit voluptatum assumenda.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+<div class="my-5 py-5">
+  <div class="row">
+    <div class="col">
+      <img src="images/Picture2.png" class="img-thumbnail" style="width: 80%;">
+    </div>
+    <div class="col pr-5">
+      <h3 class="title pb-3">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.</h3>
+      <p class="text-secondary pb-3">Odit ad nam, excepturi recusandae porro architecto repellat nostrum odio  prodivent earum totam eveniet dolores alias et officia facere facilis, obcaecati illum.</p>
+      <p class="font-weight-bold"><i class="fas fa-file" id="icon"></i> Lorem ipsum dolor sit amet</p>
+      <p class="font-weight-bold"><i class="fas fa-home" id="icon"></i> Lorem ipsum dolor sit amet</p>
+    </div>
+  </div>
+</div>
+<div class="my-5 py-5">
+  <div class="row">
+    <div class="col">
+      <h3 class="title pb-3">Lorem ipsum dolor sit amet<br>consectetur adipisicing elit.</h3>
+      <p class="text-secondary pb-3">Odit ad nam, excepturi recusandae porro architecto repellat nostrum odio  prodivent earum totam eveniet dolores alias et officia facere facilis, obcaecati illum.</p>
+      <p class="font-weight-bold"><i class="fas fa-file" id="icon"></i> Lorem ipsum dolor sit amet</p>
+      <p class="font-weight-bold"><i class="fas fa-home" id="icon"></i> Lorem ipsum dolor sit amet</p>
+      <p class="font-weight-bold"><i class="fas fa-home" id="icon"></i> Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="col">
+      <img src="images/Picture3.png" class="img-thumbnail" style="width: 80%;">
+    </div>
+  </div>
+</div>
+</div>
+
+
+<section style="background-color: #0E0B2B; height: 400px;">
+<div class="container">
+<div class=" text-center py-5">
+  <div class="body">
+    <h3 class="title text-light py-3">Lorem ipsum dolor sit, amet consectetur<br>adipisicing elit.</h3>
+    <p class="font-weight-bold text-light">Itaque natus alias iusto aspernatur laboriosam at coomodi..</p>
+    <a href="#" class="btn btn-primary px-3">Learn more</a>
+
+    <div class="card-deck mt-5">
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 20%; background-color: #FFBE3D;" id="tag" class="text-left">
+            <p>New</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu tempore animi iusto nihil maxime!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 20%; background-color: #5CC9A7;" id="tag" class="text-left">
+            <p>Tips</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu tempore animi iusto nihil maxime!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 30%; background-color: #F25767;" id="tag" class="text-left">
+            <p>Update</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck mt-5">
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 20%; background-color: #FFBE3D;" id="tag" class="text-left">
+            <p>New</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu tempore animi iusto nihil maxime!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 20%; background-color: #5CC9A7;" id="tag" class="text-left">
+            <p>Tips</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu tempore animi iusto nihil maxime!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <div class="card-body m-3">
+          <div class="d-flex flex-row">
+          <div style="width: 30%; background-color: #F25767;" id="tag" class="text-left">
+            <p>Update</p>
+          </div>
+          <div style="width: 10%;"></div>
+          <div style="width: 70%;" class="">
+            <h5 class="text-justify">Lorem ipsum dolor</h5>
+            <p class="text-justify">Beatae excepturi temporibsu!</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+<div>
+  <p style="width: 50px; border-radius: 15px; background-color: #008AFF; color: white; text-align: center;">KPI</p>
+</div>
+<div class="row">
+<div class="col">
+  <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto a possimus delectus obcaecati exercitationem nisi repellat vitae minima vel? Voluptatibus dolor nulla cumque, distinctio alias fugiat. Laboriosam explicabo suscipit sunt.</h5>
+</div>
+<div class="col"></div>
+</div>
+</div>
+
+<div class="py-5">
+  <div class="card-deck">
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #FFBE3D;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">100% Responsive</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #008AFF;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">Based on Bootstrap 4</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #F25767;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">Based on Bootstrap 4</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck py-5">
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #5CC9A7;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">100% Responsive</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #F25767;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">Based on Bootstrap 4</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="height: 100px;">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+        <div style="width: 20%; background-color: #008AFF;" id="check" class="text-left">
+          <i class="fas fa-check"></i>
+        </div>
+        <div style="width: 10%;"></div>
+        <div style="width: 70%;" class="">
+          <h5 class="text-justify">Based on Bootstrap 4</h5>
+          <p class="text-justify">Build to be customized</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="py-5" style="background-color: #fafbfe;">
+  <div class="container">
+    <div class="text-center py-5">
+      <div class="body">
+        <h2 class="title py-2">Lorem, ipsum dolor sit amet</h2>
+        <p class="text text-secondary">With supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container pl-5 pr-5">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="text-center">
+        <div class="card" id="card">
+          <div class="card-body">
+            <h2 class="card-title">VND150000</h2>
+            <p class="card-text">PowerBI Desktop</p>
+            <div class="mt-5 py-5">
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor</p>
+            </div>
+            <a href="#" class="btn btn-warning text-light font-weight-bold">Register Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="text-center">
+        <div class="card" id="card" style="background-color: #0E0B2B;">
+          <div class="card-body text-light">
+            <h2 class="card-title">VND5090000</h2>
+            <p class="card-text">Proffesstion</p>
+            <div class="mt-5 py-5">
+              <p>Lorem ipsum</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p>Lorem ipsum dolor sit amet</p>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Lorem ipsum <span style="border-bottom: 1px dashed #57B589;" class="text-success">dolor</span></p>
+            </div>
+            <a href="#" class="btn btn-light font-weight-bold">Register Now</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="text-center py-5">
+      <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit ... more</p>
+      <span class="text-primary" style="border-bottom: 1px dashed #007BFF;">Contact us <i class="fas fa-arrow-right"></i></span>
+    </div>
+</div>
+
+
+<div style="background-color: #171347;">
+  <div class="container">
+    <footer class="pt-4 my-md-2 px-md-5 border-bottom">
+      <div class="row py-5 text-light">
+        <div class="col-5 pl-5">
+        <div class="col-12 col-md">
+          <h5 class="text-primary">Quickshop</h5>
+          <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius facere repellendus velit deserunt nobis, temporibus magni atque! Fuga soluta odio nesciunt asperiores voluptatibus debitis! Unde inventore delectus expedita voluptatibus doloribus.</p>
+          <div class="mt-2">
+            <i class="fas fa-basketball-ball pr-4"></i>
+            <i class="fas fa-paw pr-4"></i>
+            <i class="fab fa-instagram pr-4"></i>
+            <i class="fab fa-facebook pr-4"></i>
+          </div>
+        </div>
+        </div>
+        <div class="col-6 col-md px-5">
+          <h5>Account</h5>
+          <ul class="list-unstyled text-small mt-4">
+            <li><a class="text-muted" href="#">Profile</a></li>
+            <li><a class="text-muted" href="#">Settings</a></li>
+            <li><a class="text-muted" href="#">Billing</a></li>
+            <li><a class="text-muted" href="#">Notifications</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md px-5">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small mt-4">
+            <li><a class="text-muted" href="#">Services</a></li>
+            <li><a class="text-muted" href="#">Pricing</a></li>
+            <li><a class="text-muted" href="#">Contact</a></li>
+            <li><a class="text-muted" href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md px-5">
+          <h5>Company</h5>
+          <ul class="list-unstyled text-small mt-4">
+            <li><a class="text-muted" href="#">Community</a></li>
+            <li><a class="text-muted" href="#">Help center</a></li>
+            <li><a class="text-muted" href="#">Support</a></li>
+          </ul>
+        </div>       
+      </div>
+    </footer>
+
+    <div class="py-2">
+      <nav class="navbar navbar-expand-lg text-secondary  justify-content-between">
+        <a>&copy;2022 <span class="text-white">Tin học Till.</span> Tin va hoc theo cach cua ban</a>
+          <div>
+            <a class="px-3">Terms</a>
+            <a class="px-3">Privacy</a>
+            <a class="px-3">Cookies</a>
+          </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+      function submitBtn(){
+
+        var mail=$('#email').val();
+        var ps=$('#pass').val();
+
+        if(mail=='admin@ntu.edu.vn' && ps=="12345678"){
+          alert('Đăng nhập thành công!');
+          setTimeout(function(){
+            window.location.href="index.html";
+          },3000);
+        }
+        else{
+          alert('Địa chỉ email hoặc mật khẩu không hợp lệ');
+        }
+      }
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,125 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.ClassTimeTable>
+
+@{
+    ViewBag.Title = "ViewTimeTable";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<div class="page-wrapper">
+
+    <div class="page-breadcrumb">
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Thời khóa biếu lớp</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Thời khóa biếu lớp</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-user-clock"></i> Thời khóa biếu lớp</h5>
+                    </div>
+
+                    <div class="row">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <table class="table">
+
+                                <thead class="thead-dark">
+                                    <tr>
+
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Days)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period1)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period2)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period3)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period4)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period5)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Period6)
+                                        </th>
+                                        <th>
+                                            <label>Action</label>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Days)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period1)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period2)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period3)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period4)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period5)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Period6)
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("EditFeeType","Settings", new { id = item.ClassLevelID})" class="btn btn-mini btn-outkine-orange icon-edit bigger-10"><img src="~/assets/48763_file_edit_icon.png" /></a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+

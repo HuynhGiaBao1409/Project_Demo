@@ -1,0 +1,220 @@
+﻿@model IEnumerable<QuanLyTruongHoc.Models.Admin.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Teacher.cshtml";
+}
+
+
+<div class="page-wrapper">
+
+
+    <style>
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+    </style>
+
+    <div class="page-breadcrumb">
+
+
+
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Dashboard</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-cyan text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-users"></i></h1>
+                        <h6 class="text-white">Staff</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-success text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-user-graduate"></i></h1>
+                        <h6 class="text-white">Student</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-warning text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-book"></i></h1>
+                        <h6 class="text-white">Subject</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card card-hover">
+                    <div class="box bg-danger text-center">
+                        <h1 class="font-light text-white"><i class="fas fa-level-up-alt"></i></h1>
+                        <h6 class="text-white">Class</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title m-b-0"><i class="fas fa-users"></i> Student</h5>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="card-body">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.AdmissionNo)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.StudentName)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.Gender)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ClassLevel)
+                                        </th>
+                                        <th>
+                                            @Html.DisplayNameFor(model => model.ClassAphabet)
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.AdmissionNo)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.StudentName)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Gender)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ClassLevel)
+                                        </td>
+
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ClassAphabet)
+                                        </td>
+
+                                    </tr>
+                                }
+
+                            </table>
+
+
+
+
+                            @{
+                                double totalPages = ViewBag.TotalPages;
+
+                                <ul class="pagination">
+                                    @if (ViewBag.PageNumber == 1)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Previous", "Index", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Previous", "Index", new { PageNumber = ViewBag.PageNumber - 1 })
+                                        </li>
+                                    }
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        if (i == ViewBag.PageNumber)
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "Index", new { PageNumber = i })
+                                            </li>
+                                        }
+                                        else
+                                        {
+                                            <li class="active" style="float:left">
+                                                @Html.ActionLink(i.ToString(), "Index", new { PageNumber = i })
+                                            </li>
+                                        }
+                                    }
+                                    @if (ViewBag.PageNumber == totalPages)
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Next", "Index", new { PageNumber = ViewBag.PageNumber })
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="active" style="float:left">
+                                            @Html.ActionLink("Next", "Index", new { PageNumber = ViewBag.PageNumber + 1 })
+                                        </li>
+                                    }
+                                </ul>
+                            }
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
